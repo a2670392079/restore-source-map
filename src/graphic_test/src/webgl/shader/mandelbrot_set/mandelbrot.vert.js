@@ -1,0 +1,1 @@
+export default "attribute vec2 a_vertexPostition;\r\n\r\nattribute vec2 uv;\r\n\r\nvarying vec2 vUv;\r\n\r\n\r\nvoid main(){\r\n    gl_PointSize = 1.0;\r\n    vUv = uv;\r\n    gl_Position = vec4(a_vertexPostition, 1, 1);\r\n}";
